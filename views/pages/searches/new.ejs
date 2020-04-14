@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../../layout/head')%>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/modules.css">
+</head>
+
+<body>
+    <%- include('../../layout/header')%>
+    
+
+    <main id="main">
+        <h2 id="h2">Search by Title or Author</h2>
+
+        <form id="form" action="/searches" method="POST">
+            <div id="div">
+                <input id="enterI" type="text" placeholder="Enter a title or author" name="enter">
+
+                <label class="titlel">Title<input class="title" name="radioType" type="radio" value="title">
+                </label>
+                <label class="titlel">Author<input class="title" name="radioType" type="radio" value="author"></label>
+
+                <button id="button" type="submit">Search the Google Books API</button>
+            </div>
+        </form>
+    </main>
+    
+   <%- include('../../layout/footer')%>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+     
+</body>
+
+</html> 
